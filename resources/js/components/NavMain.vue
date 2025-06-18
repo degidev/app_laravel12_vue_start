@@ -75,10 +75,11 @@ onMounted(() => {
                         <SidebarMenuButton 
                             @click="toggleMenu(item.title)"
                             :tooltip="item.title"
+                            class="pl-1.5"
                         >
-                            <div class="flex items-center justify-between w-full">
-                                <div class="flex items-center gap-2">
-                                    <component :is="item.icon" />
+                            <div class="flex items-center justify-between w-full ">
+                                <div class="flex items-center justify-center gap-2 ">
+                                    <component :is="item.icon" class="size-[18px]" />
                                     <span>{{ item.title }}</span>
                                 </div>
                                 <i :class="[
